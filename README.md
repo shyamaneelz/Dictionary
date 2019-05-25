@@ -5,6 +5,8 @@ It has a command line interface and can be run from command prompt with 'python 
 
 The application also checks for spelling mistakes by returning a close match with "Did you mean XYZ?"
 
+Dictionary uses a sample data source(a json file) taken off the internet.
+
 Installation
 
 Install Python(https://www.python.org/downloads/) 
