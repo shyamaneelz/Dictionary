@@ -7,6 +7,12 @@ word = input("Enter your word:").lower()
 if word in data.keys():
     print("\n".join(data[word]))
     
+elif word.capitalize() in data.keys():
+    print("\n".join(data[word.capitalize()]))
+
+elif word.upper() in data.keys():
+    print("\n".join(data[word.upper()]))
+    
 elif len(get_close_matches(word, data.keys(), cutoff=0.8))>0:
     yn = input("Did you mean %s [Y/N]?" % get_close_matches(word, data.keys())[0]).lower()
     if yn in ["y", "yes"]:
